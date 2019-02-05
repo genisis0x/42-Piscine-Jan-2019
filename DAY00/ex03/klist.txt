@@ -1,0 +1,6 @@
+Credentials cache: API:48061
+        Principal: maparmar@42.US.ORG
+
+  Issued                Expires               Principal
+Jan  7 20:17:18 2019  Jan  8 06:17:18 2019  krbtgt/42.US.ORG@42.US.ORG
+Jan  7 20:19:07 2019  Jan  8 06:17:18 2019  host/vgs-fn1.42.us.org@42.US.ORG
