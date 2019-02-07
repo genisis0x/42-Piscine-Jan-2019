@@ -1,31 +1,15 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: bchapman <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/01/21 17:19:44 by bchapman          #+#    #+#              #
-#    Updated: 2019/01/29 17:54:43 by bchapman         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
 
-NAME= bsq
-DEPS= bbq.h
-SRCF= bbq.c
-CFLAGS= -I $(INCLUDES) -Wall -Wextra -Werror
-INCLUDES= includes/
+NAME = bsq
 
+SRC = srcs/main.c srcs/functions.c srcs/functions2.c srcs/ft_start.c \
+	  srcs/ft_check_instructions.c srcs/ft_board.c srcs/ft_optimizations.c
 
 all: $(NAME)
 
 $(NAME):
-	gcc -o $@ $(SRCF) $(CFLAGS)
-
+		gcc -Wall -Wextra -Werror  -o $(NAME) $(SRC)
 clean:
-	rm -f *.o
-
+		/bin/rm -f
 fclean: clean
-	rm -f $(NAME)
-
+		/bin/rm -f $(NAME)
 re: fclean all
