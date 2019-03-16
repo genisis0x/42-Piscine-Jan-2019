@@ -13,13 +13,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef struct slist 
+/*typedef struct slist 
 {
 	int 	data;
 	struct slist 	*next;
-}			t_list;
+}*/			t_list;
 
-t_list *head = NULL;
+//t_list *head = NULL;
 void ft_list_reverse (t_list *pre, t_list *curr)
 {
 	if (curr)
@@ -28,13 +28,13 @@ void ft_list_reverse (t_list *pre, t_list *curr)
 		curr->next = pre;
 	}
 	else
-		head = pre;
+		*begin_list = pre;
 }
 
-t_list *ft_list_reverse(t_list **begin_list)
+void ft_list_reverse(t_list **begin_list)
 {
 	ft_list_reverse(NULL, *begin_list);
-	return(head);
+	//return(head);
 }
 
 /********************Below is used to check it's output*******************/
