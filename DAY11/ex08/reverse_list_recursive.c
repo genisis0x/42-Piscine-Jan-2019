@@ -22,11 +22,11 @@ typedef struct slist
 t_list *head = NULL;
 
 
-void ft_reverse (t_list *pre, t_list *curr)
+void ft_list_reverse (t_list *pre, t_list *curr)
 {
 	if (curr)
 	{
-		ft_reverse(curr, curr->next);
+		ft_list_reverse(curr, curr->next);
 		curr->next = pre;
 	}
 	else
@@ -35,7 +35,7 @@ void ft_reverse (t_list *pre, t_list *curr)
 
 t_list *reverse_list(t_list **begin_list)
 {
-	ft_reverse(NULL, *begin_list);
+	ft_list_reverse(NULL, *begin_list);
 	return(head);
 }
 
@@ -80,7 +80,7 @@ int main (void)
 	push(arr[9]);
 	ft_print_list(head);
 	printf("\n");
-	t_list *result = reverse_list(&head);
+	t_list *result = ft_list_reverse(&head);
 	ft_print_list(result);
 	return 0;
 }
