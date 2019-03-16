@@ -20,8 +20,6 @@ typedef struct slist
 }			t_list;
 
 t_list *head = NULL;
-
-
 void ft_list_reverse (t_list *pre, t_list *curr)
 {
 	if (curr)
@@ -33,7 +31,7 @@ void ft_list_reverse (t_list *pre, t_list *curr)
 		head = pre;
 }
 
-t_list *reverse_list(t_list **begin_list)
+t_list *ft_list_reverse(t_list **begin_list)
 {
 	ft_list_reverse(NULL, *begin_list);
 	return(head);
@@ -41,7 +39,7 @@ t_list *reverse_list(t_list **begin_list)
 
 /********************Below is used to check it's output*******************/
 
-t_list *head; // head pointer of node
+/*t_list *head; // head pointer of node
 
 t_list *ft_create(int item)
 {
@@ -84,3 +82,4 @@ int main (void)
 	ft_print_list(result);
 	return 0;
 }
+*/
