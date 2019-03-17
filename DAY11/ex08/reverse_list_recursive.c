@@ -20,15 +20,15 @@
 }*/			t_list;
 
 //t_list *head = NULL;
-void ft_list_reverse (t_list *pre, t_list *curr)
+void ft_reverse(t_list *pre, t_list **curr)
 {
 	if (curr)
 	{
-		ft_list_reverse(curr, curr->next);
-		curr->next = pre;
+		ft_reverse(*curr, (*curr)->next);
+		(*curr)->next = pre;
 	}
 	else
-		*begin_list = pre;
+		*curr = pre;
 }
 
 void ft_list_reverse(t_list **begin_list)
