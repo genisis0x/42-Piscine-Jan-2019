@@ -22,7 +22,7 @@
 //t_list *head = NULL;
 void ft_reverse(t_list *pre, t_list **curr)
 {
-	if (curr)
+	if (*curr)
 	{
 		ft_reverse(*curr, (*curr)->next);
 		(*curr)->next = pre;
