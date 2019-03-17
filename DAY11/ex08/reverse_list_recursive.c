@@ -33,7 +33,7 @@ void ft_reverse(t_list *pre, t_list **curr)
 
 void ft_list_reverse(t_list **begin_list)
 {
-	ft_list_reverse(NULL, *begin_list);
+	ft_reverse(NULL, *begin_list);
 	//return(head);
 }
 
