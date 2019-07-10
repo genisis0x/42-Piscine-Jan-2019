@@ -15,5 +15,5 @@ int	ft_recursive_power(int nb, int power)
 		return (nb);
 	}
 	y = ft_recursive_power(nb, power / 2);
-	return (y * y * ft_recursive_power(nb, power % 2)); // Good Approch and will conver the odd power to odd and even.
+	return (y * y * ft_recursive_power(nb, power % 2)); // Good Approch and will convert the odd power to odd and even.
 }
