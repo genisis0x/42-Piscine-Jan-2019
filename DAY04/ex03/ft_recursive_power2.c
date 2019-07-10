@@ -1,3 +1,5 @@
+// Second Method to get the odd and even Power in a one line.
+
 int	ft_recursive_power(int nb, int power)
 {
 	int y;
